@@ -1,0 +1,27 @@
+task:   
+    path:   /
+    defaults: { _controller: DevTaskBundle:Task:index }
+task_new:
+    path:     /new
+    defaults: { _controller: DevTaskBundle:Task:new }
+task_create:
+    path:     /create
+    defaults: { _controller: DevTaskBundle:Task:create }
+task_show:
+    path:     /show/{id}
+    defaults: { _controller: DevTaskBundle:Task:show }
+task_edit:
+    path:     /edit/{id}
+    defaults: { _controller: DevTaskBundle:Task:edit }    
+task_update:
+    path:     /update/{id}
+    defaults: { _controller: DevTaskBundle:Task:update }        
+task_delete:
+    path:     /delete/{id}
+    defaults: { _controller: DevTaskBundle:Task:delete }    
+comment_new:
+    path:     /newComment
+    defaults: { _controller: DevTaskBundle:Comment:new }
+comment_success:
+    path: /comment_success
+    defaults: { _controller: DevTaskBundle:Comment:success }
