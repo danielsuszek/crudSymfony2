@@ -10,11 +10,17 @@
    Base styles: opinionated defaults
    ========================================================================== */
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+    background: rgb(233, 233, 233);    
+}
+body {
+    background: rgb(255, 255, 255);
+    margin: 0 auto;
+    max-width: 980px;
 }
 
+.wrap {
+    padding: 0 32px;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301

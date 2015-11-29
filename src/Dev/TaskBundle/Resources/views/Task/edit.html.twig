@@ -1,9 +1,21 @@
 {% extends '::base.html.twig' %}
-
+{% form_theme edit_form 'DevTaskBundle:Form:fields.html.twig'%}
 {% block body -%}
     <h1>Task edit</h1>
 
-    {{ form(edit_form) }}
+    {# {{ form(edit_form) }} #}
+    {{ form_start(edit_form) }}
+    <div>
+        {# {{ form_widget(form.commentContent) }} #}
+        
+        {# {{ form_errors(edit_form.task) }} #}
+        
+        {{ form_row(edit_form.task) }}
+        {{ form_widget(edit_form.complete) }}
+        {# {{ form_label(edit_form.commentContent) }} #}
+        
+    </div>
+    {{ form_end(edit_form) }}
 
         <ul class="record_actions">
     <li>
