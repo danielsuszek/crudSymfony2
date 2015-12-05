@@ -10,12 +10,21 @@ task_create:
 task_show:
     path:     /show/{id}
     defaults: { _controller: DevTaskBundle:Task:show }
+
 task_edit:
     path:     /edit/{id}
     defaults: { _controller: DevTaskBundle:Task:edit }    
+task_edit_complete:
+    path:     /{id}/edit-complete
+    defaults: { _controller: DevTaskBundle:Task:editComplete }        
+
 task_update:
     path:     /update/{id}
     defaults: { _controller: DevTaskBundle:Task:update }        
+task_update_complete:
+    path:     /{id}/update-complete
+    defaults: { _controller: DevTaskBundle:Task:updateComplete }        
+    
 task_delete:
     path:     /delete/{id}
     defaults: { _controller: DevTaskBundle:Task:delete }    
